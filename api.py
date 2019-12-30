@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import requests
 import json
 
@@ -20,7 +21,7 @@ class LastAPI:
         return self.json
 
 def main():
-    with open("lastfm") as f:
+    with open("/home/kyle/code/lastfm/lastfm") as f:
         content = f.read().splitlines()
 
     data = []
